@@ -1,7 +1,7 @@
 ---
   - name: This is a site playbook to create directory on all ubuntu based host
     hosts: all
-    become: yes
+    become: true
 
     roles:
-       - createfile
+       - cdirfile
