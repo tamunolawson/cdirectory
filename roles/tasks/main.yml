@@ -1,0 +1,3 @@
+---
+  - name: This will create a directory on all ubuntu host
+    file: path=/home/aws/training state=directory
