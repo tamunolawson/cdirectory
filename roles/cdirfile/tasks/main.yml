@@ -1,8 +1,8 @@
 ---
   - name: This will create multiple directories on all ubuntu host
-    file: path=/home/aws/{{item}} state=absent
+    file: path=/home/aws/{{item}} state=directory
     with_items: "{{directory}}"
 
-#  - name: This will copy file from ansible tower to all ubuntu host
-#    copy: src=/home/aws/credential dest=/home/aws/{{item}}
-#    with_items: "{{directory}}"
+  - name: This will copy file from ansible tower to all ubuntu host
+    copy: src=/home/aws/credential dest=/home/aws/{{item}}
+    with_items: "{{directory}}"
