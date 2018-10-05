@@ -1,6 +1,7 @@
 ---
-  directory:
-    - ariella
-    - batia
-    - emi
-    - progress
+  - name: These are variables for folders that need created
+    directory:
+       - ariella
+       - batia
+       - emi
+       - progress

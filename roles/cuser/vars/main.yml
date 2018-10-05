@@ -1,0 +1,7 @@
+---
+  - name: These are variables that drive multiple user account creation
+    newhire:
+      - grace
+      - ariella
+      - batia
+      - tamuno
