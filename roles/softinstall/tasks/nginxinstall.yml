@@ -1,0 +1,8 @@
+---
+  - name: This will install software with dependencies
+    when: ansible_os_family == "RedHat"
+    yum: name=epel-release state=present
+
+  - name: This will install nginx on only RedHat
+    when: ansible_os_family == "RedHat"
+    yum: name=nginx state=present state=started 

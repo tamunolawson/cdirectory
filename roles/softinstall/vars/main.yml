@@ -1,0 +1,6 @@
+---
+ - name: Variables for software install playbook
+   prog:
+     - php
+     - mysql
+     - php-mysql

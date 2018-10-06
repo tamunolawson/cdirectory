@@ -1,0 +1,3 @@
+---
+  - include: softinstall.yml
+  - include: nginx.yml
