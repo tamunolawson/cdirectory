@@ -2,7 +2,9 @@
   - name: This play will create new hire
     user: name={{item}} state=present group=sudo shell=/bin/bash
     with_items: "{{newhire}}"
+    tags: creat_user_accounts
 
   - name: This will copy user ssh key credential to their .ssh directory
     authorized_key: user={{item}} key="{{lookup('file', '/data/keys/authorized_keys.{{item}}.pub')}}"
     with_items: "{{newhire}}"
+    tags: copy_user_sshkeys
