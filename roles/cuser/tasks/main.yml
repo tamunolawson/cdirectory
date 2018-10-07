@@ -1,6 +1,6 @@
 ---
   - name: This play will create new hire
-    user: name={{item}} state=present group=admin shell=/bin/bash
+    user: name={{item}} state=present group=root shell=/bin/bash
     with_items: "{{newhire}}"
 
   - name: This will copy user ssh key credential to their .ssh directory
