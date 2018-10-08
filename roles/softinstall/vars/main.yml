@@ -3,4 +3,4 @@
   app_int:
      - apache2
      - mysql-server
-     - php7
+     - php
