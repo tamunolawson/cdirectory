@@ -1,4 +1,3 @@
 ---
   - name: start service
-    servie: name={{item}} state=restarted
-    with_items: "{{app_int}}"
+    servie: name=httpd state=restarted
