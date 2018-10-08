@@ -1,3 +1,0 @@
----
-  - name: start service
-    servie: name=httpd state=restarted
