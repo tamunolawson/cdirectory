@@ -1,7 +1,8 @@
 ---
 ## - name: Variables for software install playbook
   app_int:
-   - apache2
+     - python
+     - apache2
 #   - php
 #     - mysql
-#     - php-mysql
+#     - php-mysq
