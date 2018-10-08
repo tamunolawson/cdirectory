@@ -1,4 +1,4 @@
 ---
- - start_service:
-   servie: name={{item}} state=enabled
-   with_items: "{{app_int}}"
+  - name: start service
+    servie: name={{item}} state=restarted
+    with_items: "{{app_int}}"
