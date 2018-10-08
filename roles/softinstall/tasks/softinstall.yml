@@ -4,9 +4,11 @@
     sudo: name={{item}} state=latest
     with_items: "{{prog}}"
     notify: starting_services
+    tags: only_debian
 
  - name: This play install production ready programs on only CentOS OS
    when: ansible_os_family == "RedHat"
    yum: namne={{item}} state=present
    with_items: "{{prog}}"
    notify: starting_services
+   tags: only_centos
