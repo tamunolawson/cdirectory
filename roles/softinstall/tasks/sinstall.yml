@@ -3,7 +3,7 @@
 #    when: ansible_os_family == "Debian"
     apt: name={{item}} state=latest
     with_items: "{{app_int}}"
-    notify: start_service
+#    notify: start_service
     tags: only_debian
 
 # - name: This play install production ready programs on only CentOS OS
