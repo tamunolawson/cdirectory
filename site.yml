@@ -5,5 +5,5 @@
 
     roles:
        ##- cdirfile
-       ##- softinstall
-       - cuser
+       - softinstall
+       ##- cuser
