@@ -1,9 +1,9 @@
 ---
   - name: This play install production ready programs on only Debian OS
 #    when: ansible_os_family == "Debian"
-    apt: name={{item}} update_cache=yes state=latest
+    apt: name={{item}} state=latest
     with_items: "{{app_int}}"
-    notify: starting_services
+    notify: start_service
     tags: only_debian
 
 # - name: This play install production ready programs on only CentOS OS
