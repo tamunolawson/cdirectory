@@ -1,6 +1,7 @@
 ---
 ## - name: Variables for software install playbook
-   prog:
-     - php
-     - mysql
-     - php-mysql
+  app_int:
+   - apache2
+#   - php
+#     - mysql
+#     - php-mysql
