@@ -1,14 +1,14 @@
 ---
   - name: This play install production ready programs on only Debian OS
-    when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "Debian"
     apt: name={{item}} state=latest
     with_items: "{{app_int}}"
 #    notify: start_service
     tags: only_debian
 
-# - name: This play install production ready programs on only CentOS OS
-#   when: ansible_os_family == "RedHat"
-#   yum: namne={{item}} state=present
-#   with_items: "{{prog}}"
+ - name: This play install production ready programs on only CentOS OS
+   when: ansible_os_family == "RedHat"
+   yum: namne={{item}} state=latest
+   with_items: "{{app_int}}"
 #   notify: starting_services
-#   tags: only_centos
+   tags: only_centos
