@@ -10,5 +10,5 @@
     when: ansible_os_family == "CentOS"
     yum: namne={{item}} state=latest
     with_items: "{{app_int}}"
-    notify: starting_services
+    notify: start_service
     tags: only_centos
